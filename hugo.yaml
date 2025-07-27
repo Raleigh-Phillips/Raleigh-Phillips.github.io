@@ -1,7 +1,38 @@
 theme: ["PaperMod"]
-baseURL: https://example.org/
+baseURL: https://raleigh-phillips.github.io/
 languageCode: en-us
-title: My New Hugo Site
+title: Raleigh Phillips
 caches:
   images:
     dir: :cacheDir/images
+
+params:
+  homeInfoParams:
+    Title: "G'day there 👋"
+    Content: >
+      - Hey, here's Raleigh! Currently working on my studies, stones and plants. Might be busy eating TimTams...
+
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: false
+
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/Raleigh-Phillips"
+    - name: LinkedIn
+      title: Check out where I try to be professional
+      url: "https://www.linkedin.com/in/raleighphillips?trk=contact-info"
+description: "G'day, I'm Raleigh - welcome to yet another tech blog! Here you can find my latest blog posts and what I have been up to!"
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
