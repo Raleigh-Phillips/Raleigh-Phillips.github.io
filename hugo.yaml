@@ -10,7 +10,7 @@ params:
   homeInfoParams:
     Title: "G'day there 👋"
     Content: >
-      - Hey, here's Raleigh! Currently working on my studies, stones and plants. Might be busy eating TimTams...
+      - My name is Raleigh Phillips, this website is a place where I deposit different projects I have worked with. A general theme of these projects is centered around Machine Learning, it culminates my studies together: Applied Mathematics and Statistics, Applied and Computational Mathematics.
 
   ShowShareButtons: false
   ShowReadingTime: true
