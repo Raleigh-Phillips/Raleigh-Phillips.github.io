@@ -10,7 +10,7 @@ params:
   homeInfoParams:
     Title: "G'day there 👋"
     Content: >
-      - My name is Raleigh Phillips, this website is a place where I deposit different projects I have worked with. A general theme of these projects is centered around Machine Learning, it culminates my studies together: Applied Mathematics and Statistics, Applied and Computational Mathematics.
+      - My name is Raleigh Phillips, this website is a place where I deposit different projects I have worked with. Take a look around to see what I have been up to.
 
   ShowShareButtons: false
   ShowReadingTime: true
@@ -24,12 +24,11 @@ params:
 
   socialIcons:
     - name: github
-      title: View Source on Github
+      title: View My Git Repository 
       url: "https://github.com/Raleigh-Phillips"
     - name: LinkedIn
-      title: Check out where I try to be professional
+      title: View My LinkedIn Contact Information
       url: "https://www.linkedin.com/in/raleighphillips?trk=contact-info"
-description: "G'day, I'm Raleigh - welcome to yet another tech blog! Here you can find my latest blog posts and what I have been up to!"
 
 markup:
   goldmark:
