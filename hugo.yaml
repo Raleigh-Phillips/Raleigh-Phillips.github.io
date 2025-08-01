@@ -5,7 +5,11 @@ title: Raleigh Phillips
 caches:
   images:
     dir: :cacheDir/images
-
+menu:
+  main:
+    - name: CV
+      url: cv/
+      weight: 4
 params:
   homeInfoParams:
     Title: "G'day there 👋"
