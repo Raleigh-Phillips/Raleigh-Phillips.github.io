@@ -10,7 +10,7 @@ params:
   homeInfoParams:
     Title: "G'day there 👋"
     Content: >
-      - hello jas My name is Raleigh Phillips, this website is a place where I deposit different projects I have worked with. Take a look around to see what I have been up to.
+      - My name is Raleigh Phillips, this website is a place where I deposit different projects I have worked with. Take a look around to see what I have been up to.
 
   ShowShareButtons: false
   ShowReadingTime: true
