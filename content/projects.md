@@ -43,7 +43,7 @@ The primary goal was to integrate and showcase a comprehensive range of **C++ pr
 
 ---
 
-## Illustration Example
+## Example
 
 
 
