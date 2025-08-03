@@ -7,11 +7,11 @@ caches:
     dir: :cacheDir/images
 menu:
   main:
-    - name: About Me
+    - name: About
       url: about/
       weight: 10
-    - name: CV
-      url: cv/
+    - name: Contact
+      url: contact/
       weight: 10
     - name: Projects
       url: projects/
