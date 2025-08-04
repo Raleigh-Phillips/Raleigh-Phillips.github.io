@@ -36,10 +36,11 @@ The primary goal was to integrate and showcase a comprehensive range of **C++ pr
 
 ## Features
 
-- **Fractal Types Supported:** Mandelbrot Set, Julia Set, Custom Iterative Formulas.
-- **Zoom & Pan:** Mouse-based controls for infinite zooming into fractal space.
+- **Fractal Types Supported:** Mandelbrot Set and Julia Set.
+- **Zoom & Pan:** Keypad controls for infinite zooming into fractal space.
 - **Resolution Scaling:** Dynamically adjusts rendering resolution for performance.
-- **Vector-like Behavior:** Zoom retains crispness due to recursive mathematical definition.
+- **Vector-like Behavior:** Zoom retains resolution due to recursive mathematical definition.
+- **Multi-threading** Computes tiles of pixels concurrently for faster rendering
 
 ---
 
@@ -49,13 +50,21 @@ The primary goal was to integrate and showcase a comprehensive range of **C++ pr
 
 ```cpp
 // Example of Iteration logic for Mandelbrot set
-bool Mandelbrot::isInSet(double x, double y, int maxIter) const {
-    double zx = 0, zy = 0;
-    for (int i = 0; i < maxIter; ++i) {
-        double temp = zx*zx - zy*zy + x;
-        zy = 2*zx*zy + y;
-        zx = temp;
-        if ((zx*zx + zy*zy) > 4.0) return false;
-    }
-    return true;
+
+#include "MandelbrotSet.h"
+
+MandelbrotSet::MandelbrotSet( )
+  : ComplexFractal() {
+}
+
+MandelbrotSet::MandelbrotSet( const int& height, const int& width, const double& min_x, const double& max_x, const double& min_y, const double& max_y )
+  : ComplexFractal(height, width, min_x, max_x, min_y, max_y) {
+}
+
+MandelbrotSet::~MandelbrotSet( ) {
+}
+
+void MandelbrotSet::calculateNextPoint( const double x0, const double y0, const double& a, const double& b, double& x1, double &y1 ) const{
+  x1 = x0*x0 - y0*y0 + a;
+  y1 = 2*x0*y0 + b;
 }
