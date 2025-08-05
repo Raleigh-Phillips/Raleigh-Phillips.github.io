@@ -38,7 +38,7 @@ params:
       url: "https://github.com/Raleigh-Phillips"
     - name: LinkedIn
       title: View My LinkedIn Contact Information
-      url: "https://www.linkedin.com/in/raleighphillips?trk=contact-info"
+      url: "https://www.linkedin.com/in/raleighphillips"
 
 markup:
   goldmark:
