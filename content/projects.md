@@ -44,12 +44,12 @@ The primary goal was to integrate and showcase a comprehensive range of **C++ pr
 
 ---
 
-## Example
+## Mandelbrot Set Logic
 
 
 
 ```cpp
-// Example of Iteration logic for Mandelbrot set
+// Generating the Mandelbrot set
 
 #include "MandelbrotSet.h"
 
