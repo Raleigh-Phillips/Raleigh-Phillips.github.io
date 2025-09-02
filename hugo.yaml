@@ -45,3 +45,6 @@ markup:
     parser:
       attribute:
         block: true
+
+security:
+  enableInlineShortcodes: true

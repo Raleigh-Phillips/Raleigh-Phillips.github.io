@@ -6,6 +6,39 @@
     <description>Recent content on Raleigh Phillips</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 29 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fractal Visualization</title>
+      <link>http://localhost:1313/projects/fractal-visualisation/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/fractal-visualisation/</guid>
+      <description>An Interactive Fractal Visualization in C++</description>
+    </item>
+    <item>
+      <title>Metaheuristics</title>
+      <link>http://localhost:1313/projects/metaheuristics/</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/metaheuristics/</guid>
+      <description>A Pick Up and Delivery Problem with Time Windows</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h5 id=&#34;education&#34;&gt;EDUCATION&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;A.Sc.&lt;/em&gt;&lt;/strong&gt; General Education, Utah Technological University, United States 2020-2022&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;B.Sc.&lt;/em&gt;&lt;/strong&gt; Applied Mathematics and Statistics, Royal Melbourne Institute of Technology, Australia 2022-2025&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h2 id=&#34;section-under-construction&#34;&gt;Section Under Construction&lt;/h2&gt;</description>
+    </item>
   </channel>
 </rss>

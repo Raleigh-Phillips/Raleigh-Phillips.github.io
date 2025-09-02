@@ -1,0 +1,16 @@
+.dualcover-img { display:block; width:100%; height:auto; }
+.dualcover-dark { display:none; }
+
+/* When PaperMod is in dark mode, flip visibility. 
+   PaperMod uses a theme toggle (event listener) — match either data-attribute or a .dark class */
+html[data-theme="dark"] .dualcover-dark,
+html.dark .dualcover-dark { display:block; }
+
+html[data-theme="dark"] .dualcover-light,
+html.dark .dualcover-light { display:none; }
+
+/* Also respect OS preference when user hasn't toggled anything: */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]):not(.light) .dualcover-dark { display:block; }
+  html:not([data-theme="light"]):not(.light) .dualcover-light { display:none; }
+}

@@ -4,7 +4,7 @@ date: 2025-08-29
 summary: "An Interactive Fractal Visualization in C++"
 tags: ["Mandelbrot","Julia","C++"]
 cover:
-  image: "fractal-cover.jpg"      # file sits next to index.md
+  image: "fractal-cover.jpg"    
   alt: "Mandelbrot Set"
   relative: true
   hiddenInList: false
@@ -16,51 +16,57 @@ draft: false
 
 # An Interactive Fractal Visualization in C++
 
-## Overview
-This project implements an **interactive visual exploration** of fractals in C++. Due to the nature of fractals, zooming in on a fractal acts closely as a vectorised image.
+In the beginning, the primary goal was to integrate and showcase some of the core attributes contained in **C++ programming**, mainly on the memory management side of things. But, also on some more positive things as well.  
 
-The primary goal was to integrate and showcase a comprehensive range of **C++ programming concepts and memory management strategies**, while also exploring recursive mathematical patterns in a performant environment.
+So, how can we showcase: 
+  - The dubious task of memory management
+  - An opportunity to use multi-threading 
+  - The performance of C++ 
+  - The ability to perpetually work on an application, while maintaining the functionality of features to a user.
 
----
+Hmm, well Professor Curtis Larsen came up with the brilliant idea of working around fractals. 
 
-## Objectives
-- Visualize complex fractals (Mandelbrot, Julia, and custom sets) using C++.
-- Allow **interactive zooming** and **navigation** through fractal space.
-- Use **recursive rendering** logic for generating patterns.
-- Employ robust **OOP design** and **template programming** for flexibility and performance.
-
----
-
-## Core Concepts
-
-| Concept                            | How it was applied |
-|-----------------------------------|--------------------|
-| **C++ Syntax, Variables**         | Strong type definitions and scoped constants for performance and clarity. |
-| **Pointers and References**       | Used for managing pixel buffers and color maps with minimal memory footprint. |
-| **Dynamic / Stack / Static Memory** | Recursive buffer management with dynamic memory allocation for fractal generation layers. |
-| **Functions and Classes**         | Modular structure separating rendering, math, and UI logic. |
-| **Polymorphism**                  | Renderers derived from a base `Fractal` class supporting multiple fractal types. |
-| **Namespaces**                    | Grouped related modules (e.g., `math::`, `render::`, `ui::`). |
-| **Const correctness**             | Enforced immutability across fractal data computation methods. |
-| **Robust class design**           | Used copy constructors, move semantics, RAII for safe resource management. |
-| **Template functions and classes**| Supported fractal rendering for both `float` and `double` precision. |
-| **Standard Template Library (STL)**| Used `std::vector`, `std::map`, `std::unique_ptr` extensively. |
-| **Recursion**                     | Core fractal rendering logic was built using recursive function calls. |
-| **Exceptions**                    | Handled user input, memory errors, and rendering exceptions safely. |
+So, this project implements an **interactive visual exploration** of fractals in C++. A slight caveat to this creation: zooming in on a fractal acts closely as a vectorised image, producing a seemingly endless display of high resolution. Owed all to the nature of fractals of course.
 
 ---
 
-## Features
+## Formal Objectives:
+  - To visualize complex fractals (Mandelbrot and Julia sets) using C++.
+  - Produce an ability to **interactively zoom** and **navigate** through fractal space.
+  - Implement **recursive rendering** logic to actively generate these patterns.
+  - Employ an **OOP design** to allow flexibility and functionality.
 
-- **Fractal Types Supported:** Mandelbrot Set and Julia Set.
-- **Zoom & Pan:** Keypad controls for infinite zooming into fractal space.
-- **Resolution Scaling:** Dynamically adjusts rendering resolution for performance.
-- **Vector-like Behavior:** Zoom retains resolution due to recursive mathematical definition.
+---
+
+## Aforementioned Concepts
+
+| Concept                             | Benefit                           | How it was applied |
+|-------------------------------------|-----------------------------------|--------------------|
+| **C++ Syntax, Variables**           | Performance/Clarity               | Strongly typed definitions along with scoped constants |
+| **Pointers and References**         | Minimise footprint on memory      | Used for managing pixel buffers and color maps |
+| **Dynamic / Stack / Static Memory** | Memory appropriation              | Dynamic memory for recursive fractal generation |
+| **Functions and Classes**           | Modular structure                 | Separating the rendering, math and user options. |
+| **Polymorphism**                    | Extendable functionality          | The fractal rendering is derived from a base `Fractal` class and can support the two fractal types | 
+| **Namespaces**                      | Associated attribute structure    | Related modules were grouped such as: `ComplexFractal::`, `Image::`, `ActionData::`. |
+| **Const correctness**               | Prevents variable mutation        | Used when computing the fractals |
+| **Template functions and classes**  | Reusable and generally employable | Produced `float` and `double` precision when rendering fractals. |
+| **Standard Template Library (STL)** | Pre-built classes and functions   | Frequently used `std::vector`, `std::istream` and `std::string` |
+| **Recursion**                       | Details can be adapted            | Throughout rendering fractals |
+| **Exceptions**                      | Error handling                    | Used with things like user input, memory errors and rendering |
+
+---
+
+## Application Features
+
+- **The Fractal Types Supported:** Mandelbrot Set and Julia Set.
+- **Zoom & Pan User Controls:** Keypad controls for infinite zooming when exploring fractal space.
+- **Colour Gradient:** When a colour is chosen for a fractal, a colour gradient illustrates the fractal density.
+- **Vector Resemblance:** When magnifying, the image retains resolution due to the recursive fractal space.
 - **Multi-threading** Computes tiles of pixels concurrently for faster rendering
 
 ---
 
-## Mandelbrot Set Logic
+## Coding Snippet - Mandelbrot Set Logic
 
 
 
