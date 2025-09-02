@@ -13,9 +13,6 @@ draft: false
 ---
 
 
-{{< dualcover light="content/projects/metaheuristics/light-cover.png" dark="content/projects/metaheuristics/dark-cover.png" alt="Shipping Route" >}}
-
-
 # A Pick Up and Delivery Problem with Time Windows
 
 In Progress...
