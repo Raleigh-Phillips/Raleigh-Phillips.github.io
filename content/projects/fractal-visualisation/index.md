@@ -1,3 +1,19 @@
+---
+title: "Fractal Visualization"
+date: 2025-08-29
+summary: "An Interactive Fractal Visualization in C++"
+tags: ["Mandelbrot","Julia","C++"]
+cover:
+  image: "fractal-cover.jpg"      # file sits next to index.md
+  alt: "Mandelbrot Set"
+  relative: true
+  hiddenInList: false
+  hiddenInSingle: false
+draft: false
+---
+
+
+
 # An Interactive Fractal Visualization in C++
 
 ## Overview

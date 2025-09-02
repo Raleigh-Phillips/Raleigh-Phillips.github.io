@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="tiles">
+  {{ range .Paginator.Pages }}
+    <a class="tile" href="{{ .RelPermalink }}">
+      {{/* 1) Pick the cover image from front matter or the first resource named cover* */}}
+      {{ $img := cond (isset .Params "cover") (.Resources.GetMatch .Params.cover.image) (.Resources.GetMatch "cover*") }}
+      {{ if $img }}
+        {{/* 2) Make a thumbnail (fast + crisp) */}}
+        {{ $thumb := $img.Fit "480x360" }}
+        <img src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ or .Params.cover.alt .Title }}">
+      {{ end }}
+      <div class="tile-body">
+        <h2 class="tile-title">{{ .Title }}</h2>
+        <p class="tile-summary">{{ .Summary }}</p>
+      </div>
+    </a>
+  {{ end }}
+  {{ partial "pagination.html" . }}
+</section>
+{{ end }}

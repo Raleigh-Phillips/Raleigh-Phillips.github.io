@@ -1,0 +1,26 @@
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.tile {
+  display: block;
+  background: var(--entry);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-l1);
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-l2); }
+
+.tile img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.tile-body { padding: 0.9rem 1rem 1.1rem; }
+.tile-title { margin: 0 0 0.35rem 0; font-size: 1.05rem; }
+.tile-summary { margin: 0; opacity: .8; }
